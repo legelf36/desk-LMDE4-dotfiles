@@ -30,7 +30,7 @@ filetype plugin on
 
 " Turn off default mode display
 set noshowmode
-
+set ts=4
 set showtabline=2
 
 " Automatically deletes all trailing whitespace on save"
