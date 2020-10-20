@@ -18,6 +18,14 @@ call plug#begin('~/.vim/plugged')
   Plug 'junegunn/vim-easy-align'
 call plug#end()
 
+filetype plugin indent on
+" show existing tab with 4 spaces width
+set tabstop=4
+" when indenting with '>', use 4 spaces width
+set shiftwidth=4
+" On pressing tab, insert 4 spaces
+set expandtab
+
 " Turn on syntax highlighting"
 syntax on
 
@@ -30,7 +38,6 @@ filetype plugin on
 
 " Turn off default mode display
 set noshowmode
-set ts=4
 set showtabline=2
 
 " Automatically deletes all trailing whitespace on save"

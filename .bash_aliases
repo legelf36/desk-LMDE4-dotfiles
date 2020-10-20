@@ -24,3 +24,11 @@ alias lr='ll -R'
 # Disk free human readable.
 alias df='df -h'
 
+# function to simplify ssh login after key has
+# been sent
+sshin () {
+    ssh 192.168.0."$1"
+    return
+}
+export -f sshin
+
