@@ -46,7 +46,7 @@ autocmd BufWritePre * %s/\s\+$//e
 " Airline settings"
 let g:airline_powerline_fonts = 1
 let g:Powerline_symbols='fancy'
-let g:airline_theme='murmur'
+let g:airline_theme='raven'
 let g:airline_skip_empty_sections = 1
 let g:airline#extensions#tabline#enabled = 1
 
