@@ -6,6 +6,10 @@ if empty(glob('~/.vim/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
+" Remap 'Escape' key to 'Caps Lock' key.
+au VimEnter * silent! !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
+au VimLeave * silent! !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Caps_Lock'
+
 " Load plugins"
 call plug#begin('~/.vim/plugged')
   Plug 'vim-syntastic/syntastic'
